@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payer avec PayPal</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAA07JEiLOcL1JrHu9GtWSx2YyxZ2Z9TGDAD9A7vf7bLf5O47rMBqqoqDKRs-MmZEQv2PYxk8DBI2WYYgE&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+</head>
+<body>
+    <h1>Acheter des BotCoins</h1>
+    <div id="paypal-container-XQWNUE5BWYRHS"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "XQWNUE5BWYRHS",
+      }).render("#paypal-container-XQWNUE5BWYRHS")
+    </script>
+</body>
+</html>
